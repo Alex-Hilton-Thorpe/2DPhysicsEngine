@@ -1,0 +1,5 @@
+# ninja log v6
+1	604	7918108634593108	CMakeFiles/physics_sim.dir/src/main.cpp.obj	2e9bd84cdaa1368f
+608	805	7918108640669485	physics_sim.exe	2598fd84fcf0fd0f
+38	520	7918109934822550	CMakeFiles/physics_sim.dir/src/main.cpp.obj	f69d577aa62aa0cb
+521	704	7918109939648751	physics_sim.exe	2598fd84fcf0fd0f
