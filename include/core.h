@@ -79,6 +79,38 @@ namespace Engine2D
         {
             return Vector2(x - other.x, y - other.y);
         }
+
+        void addScaledValue(const Vector2 &other, real scaleValue) // Allows for addition of another vector scaled by a real value to this one, therefore can go (v1 += v2 * constant)
+        {
+            x += other.x * scaleValue;
+            y += other.y * scaleValue;
+        }
+
+        Vector2 componentProduct(const Vector2 &other) const // Returns a new vector that is the component-wise product of this and another vector
+        {
+            return Vector2(x * other.x, y * other.y);
+        }
+
+        void componentProductUpdate(const Vector2 &other) // Updates this vector to be the component-wise product of this and another vector
+        {
+            x *= other.x;
+            y *= other.y;
+        }
+
+        real scalarProduct(const Vector2 &other) const // Returns the scalar (dot) product of this and another vector
+        {
+            return x * other.x + y * other.y;
+        }
+
+        real operator*(const Vector2 &other) const // Returns the scalar (dot) product of this and another vector
+        {
+            return x * other.x + y * other.y;
+        }
+
+        real crossProd(const Vector2 &other) const // Returns the cross product of this and another vector
+        {
+            return x * other.y - y * other.x;
+        }
     };
 
 } // namespace Engine2D
